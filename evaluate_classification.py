@@ -69,8 +69,9 @@ class EvaluateBinaryClassification:
         with open(path+'basic_report.txt', 'a+') as FO:
             FO.write(basic_report)
     
-    def save_full_report(self, path=''):
-        full_report = '============'+str(datetime.datetime.now())+'============\n'
+    def save_full_report(self, model_name='', path=''):
+        full_report = '============{}============\n'.format(model_name)
+        full_report += '============'+str(datetime.datetime.now())+'============\n'
         full_report += self.get_full_report()
         with open(path+'full_report.txt', 'a+') as FO:
             FO.write(full_report)
