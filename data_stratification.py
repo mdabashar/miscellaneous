@@ -11,7 +11,7 @@ class DataStratification:
     def __init__(self):
         pass
     
-    def undersampling(df):
+    def undersampling(self, df):
         df_0 = df[df.label==0]
         df_1 = df[df.label==1]
         if len(df_0) < len(df_1):
@@ -23,7 +23,7 @@ class DataStratification:
         df = df.sample(frac=1).reset_index(drop=True)
         return df
     
-    def oversample(df=None):
+    def oversample(self, df):
         df_0 = df[df.billPaid==0]
         df_1 = df[df.billPaid==1]
         if len(df_0) > len(df_1):
