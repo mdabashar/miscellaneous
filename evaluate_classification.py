@@ -2,7 +2,7 @@
 """
 Created on Mon Sep 21 18:19:08 2020
 
-@author: User
+@author: Bashar
 """
 
 from sklearn.metrics import cohen_kappa_score
